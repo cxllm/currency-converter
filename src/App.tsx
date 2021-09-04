@@ -79,6 +79,14 @@ class App extends React.Component<
 		return (
 			<div className="App">
 				<h1>Currency Converter</h1>
+				<a
+					href="https://github.com/cxllm/currency-converter"
+					style={{
+						fontSize: "20px",
+					}}
+				>
+					Source Code
+				</a>
 				<table>
 					<tr>
 						<td>

@@ -8,11 +8,6 @@
 	font-size: calc(10px + 2vmin);
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
 .basic-single {
 	color: black;
 	text-align: left;
@@ -28,4 +23,8 @@ td {
 	.convert {
 		font-size: 25px;
 	}
+}
+a {
+	text-decoration: none;
+	color: #00aaff;
 }
