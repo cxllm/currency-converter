@@ -59,7 +59,7 @@ class App extends React.Component<
 	};
 	convert() {
 		fetch(
-			`https://api.exchangerate.host/convert?from=${this.state.from}&to=${this.state.to}&amount=${this.state.amount}&places=3`
+			`https://api.exchangerate.host/convert?from=${this.state.from}&to=${this.state.to}&amount=${this.state.amount}`
 		)
 			.then((res) => res.json())
 			.then((res) => {
