@@ -143,6 +143,7 @@ class App extends React.Component<
 							cursor: "pointer",
 							padding: "10px",
 							color: "white",
+							fontFamily: "Poppins",
 						}}
 					/>
 				</form>
