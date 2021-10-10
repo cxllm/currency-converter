@@ -1,29 +1,33 @@
 .App {
-  text-align: center;
-  background-color: #393939;
-  min-height: 100vh;
-  display: flex;
-  color: white;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  td {
-    width: 50%;
-    padding: 10px;
-  }
-  .basic-single {
-    color: black;
-    text-align: left;
-  }
-  .rate {
-    font-size: 20px;
-  }
-  @media screen and (max-width: 1000px) {
-    .convert {
-      font-size: 25px;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: #00aaff;
-  }
+	text-align: center;
+	background-color: #393939;
+	min-height: 100vh;
+	display: flex;
+	color: white;
+	flex-direction: column;
+	font-size: calc(10px + 2vmin);
+	td {
+		width: 50%;
+		padding: 10px;
+	}
+	.basic-single {
+		color: black;
+		text-align: left;
+	}
+	.rate {
+		font-size: 20px;
+	}
+	button {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media screen and (max-width: 1000px) {
+		.convert {
+			font-size: 25px;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: #00aaff;
+	}
 }
