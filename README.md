@@ -1,1 +1,1 @@
-# [URL](https://currency.cxllm.xyz)
+# [URL](https://currency.cxllm.cf)
