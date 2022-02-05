@@ -2,7 +2,6 @@ import React, { FormEvent } from "react";
 import "./App.scss";
 import currencies from "./currencies.json";
 import Select from "react-select";
-import { throwStatement } from "@babel/types";
 
 const options: Array<{ value: string; label: string }> = [];
 for (const i in currencies) {
