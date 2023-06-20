@@ -119,10 +119,9 @@ class App extends React.Component<
 						</td>
 					</tr>
 				</table>
-
 				<button
 					style={{
-						backgroundColor: "#00aaffaa",
+						backgroundColor: "#0af",
 						border: "solid #0000",
 						justifyContent: "center",
 						fontSize: "20px",
@@ -130,7 +129,8 @@ class App extends React.Component<
 						padding: "7.5px",
 						color: "white",
 						fontFamily: "Poppins",
-						borderRadius: "100px"
+						borderRadius: "100px",
+						marginTop: "10px"
 					}}
 					onClick={this.switch}
 				>
@@ -168,7 +168,7 @@ class App extends React.Component<
 						type="submit"
 						value="Convert"
 						style={{
-							backgroundColor: "#00aaffaa",
+							backgroundColor: "#0af",
 							border: "solid #0000",
 							justifyContent: "center",
 							fontSize: "20px",
