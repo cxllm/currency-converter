@@ -36,8 +36,8 @@ class App extends React.Component<
 				to: "",
 				amount: 0,
 				converted: 0,
-				rate: 0,
-			},
+				rate: 0
+			}
 		};
 	}
 	handleChangeFrom = (selectedOption: any) => {
@@ -71,9 +71,9 @@ class App extends React.Component<
 						from: res.query.from,
 						to: res.query.to,
 						amount: res.query.amount,
-						converted: Math.round(res.result * 1000) / 1000,
-						rate: Math.round(res.info.rate * 1000) / 1000,
-					},
+						converted: Math.round(res.result * 100) / 100,
+						rate: Math.round(res.info.rate * 100) / 100
+					}
 				});
 			});
 	}
@@ -84,7 +84,7 @@ class App extends React.Component<
 				<a
 					href="https://github.com/cxllm/currency-converter"
 					style={{
-						fontSize: "20px",
+						fontSize: "20px"
 					}}
 				>
 					Source Code
@@ -120,25 +120,31 @@ class App extends React.Component<
 					</tr>
 				</table>
 
-				<br />
 				<button
 					style={{
-						backgroundColor: "#00aaff",
-						border: "solid #00aaff",
+						backgroundColor: "#00aaffaa",
+						border: "solid #0000",
 						justifyContent: "center",
 						fontSize: "20px",
 						cursor: "pointer",
-						padding: "10px",
+						padding: "7.5px",
 						color: "white",
 						fontFamily: "Poppins",
-						borderRadius: "5px",
+						borderRadius: "100px"
 					}}
 					onClick={this.switch}
 				>
 					Switch
 				</button>
 				<form onSubmit={this.submit}>
-					<h2>Amount</h2>
+					<h2
+						style={{
+							padding: "0",
+							marginBottom: "0"
+						}}
+					>
+						Amount
+					</h2>
 					<input
 						type="number"
 						id="quantity"
@@ -155,35 +161,62 @@ class App extends React.Component<
 							height: "40px",
 							width: "200px",
 							fontSize: "30px",
-							fontFamily: "Poppins",
+							fontFamily: "Poppins"
 						}}
 					/>
 					<input
 						type="submit"
 						value="Convert"
 						style={{
-							backgroundColor: "inherit",
-							width: "100px",
-							height: "50px",
-							border: "none",
+							backgroundColor: "#00aaffaa",
+							border: "solid #0000",
+							justifyContent: "center",
 							fontSize: "20px",
 							cursor: "pointer",
-							padding: "10px",
+							padding: "7.5px",
+							margin: "20px",
 							color: "white",
 							fontFamily: "Poppins",
+							borderRadius: "100px"
 						}}
 					/>
 				</form>
-				<p className="convert">
-					{this.state.result.converted
-						? `${this.state.result.amount} ${this.state.result.from} = ${this.state.result.converted} ${this.state.result.to}`
-						: ``}
-				</p>
-				<i className="rate">
-					{this.state.result.rate
-						? `Rate: 1 ${this.state.result.from} = ${this.state.result.rate} ${this.state.result.to}`
-						: ``}
-				</i>
+				{this.state.result.converted ? (
+					<div
+						style={{
+							//backgroundColor: "#00aaffaa",
+							marginLeft: "auto",
+							marginRight: "auto",
+							padding: "0px 10px",
+							borderRadius: "20px"
+						}}
+					>
+						<p
+							className="convert"
+							style={{
+								padding: "0",
+								margin: "0 0 5px 0"
+							}}
+						>
+							{this.state.result.converted
+								? `${this.state.result.amount} ${this.state.result.from} = ${this.state.result.converted} ${this.state.result.to}`
+								: ``}
+						</p>
+						<i
+							className="rate"
+							style={{
+								padding: "0",
+								margin: "0"
+							}}
+						>
+							{this.state.result.rate
+								? `Rate: 1 ${this.state.result.from} = ${this.state.result.rate} ${this.state.result.to}`
+								: ``}
+						</i>
+					</div>
+				) : (
+					<></>
+				)}
 			</div>
 		);
 	}
