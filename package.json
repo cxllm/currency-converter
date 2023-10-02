@@ -14,7 +14,7 @@
     "react-dom": "^18.2.0",
     "react-numeric-input": "^2.2.3",
     "react-scripts": "5.0.1",
-    "react-select": "^5.7.5",
+    "react-select": "^5.7.7",
     "sass": "^1.68.0",
     "typescript": "^5.2.2",
     "web-vitals": "^3.5.0"
